@@ -41,37 +41,73 @@
 }
 
 .project-sec {
-  background-color: rgb(67, 67, 127);
-  height: 150vh;
-  display: flex;
-  /* justify-content: end; */
-  flex-direction: column;
-  align-items: center;
+  background-color: rgb(49, 58, 118);
+  height: 130vh;
+}
+
+.project-h1 {
+  background: rgb(54, 63, 121);
+  height: 50px;
+}
+
+.p-h1 {
+  color: rgb(255, 253, 253);
+  font-size: 30px;
+  font-family: arial;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  text-align: center;
+}
+
+/* .card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 300px;
+  width: 200px;
+  Add shadows to create the "card" effect
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+} */
+
+/* On mouse-over, add a deeper shadow */
+/* .card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+} */
+
+/* Add some padding inside the card container */
+/* .container {
+  padding: 2px 16px;
+} */
+.projects {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .box-1 {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-gap: 4rem;
-  width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
-  margin-bottom: 6rem;
-  /* width: 400px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   border: 1px solid black;
   padding: 10px;
   margin: 30px;
-  align-self: self-start; */
 }
 
-#btn-sa {
-  margin: 50px;
-  padding: 10px;
-  text-decoration: none;
-  align-items: end;
+.d-btn {
+  background-color: rgb(49, 58, 118);
+  height: 10vh;
+  display: grid;
+  justify-content: center;
+  /* margin-bottom: 100px; */
+}
+
+.btn-sa {
   background-color: rgb(54, 54, 54);
-  color: white;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  height: 30px;
+  width: 100px;
+  text-align: center;
 }
 
 .h1-b {
@@ -86,22 +122,62 @@
 .footer {
   background-color: rgb(54, 54, 54);
   height: 70vh;
+}
+.footer-p {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
 }
 .footer-p1 {
   font-size: 50px;
   color: white;
   font-family: arial;
   font-weight: bold;
+  margin: 50px;
 }
 .footer-p2 {
   color: white;
   font-size: 20px;
   font-style: italic;
   font-family: arial;
+}
+.icons {
+  margin-top: 50px;
+  margin-left: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: space-around;
+}
+.fb-icon {
+  margin: 20px;
+  /* margin-right: 100px; */
+  color: white;
+  font-size: 25px;
+  font-family: arial;
+  text-decoration: none;
+}
+.git-icon {
+  margin: 20px;
+  color: white;
+  font-size: 25px;
+  font-family: arial;
+  text-decoration: none;
+}
+.mail-icon {
+  margin: 20px;
+  color: white;
+  font-size: 25px;
+  font-family: arial;
+  text-decoration: none;
+}
+.mobile-icon {
+  margin: 20px;
+  color: white;
+  font-size: 25px;
+  font-family: arial;
+  text-decoration: none;
 }
 
 .line-1 {
